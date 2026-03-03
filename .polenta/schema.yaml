@@ -1,0 +1,69 @@
+version: 1
+nodes:
+  - name: root
+    label: Bus interne (interface)
+    description: 'Repo interface : spécifie le bus série entre la carte de commande et les périphériques.'
+    readonly: false
+    roles: &ref_0
+      - name: controller
+        label: Contrôleur
+      - name: device
+        label: Périphérique
+    objectTypes:
+      - name: exigence-bus
+        label: Exigence Bus
+        prefix: BUS
+        category: requirement
+        fields:
+          - name: statement
+            label: Énoncé (EARS)
+            type: richtext
+            validator: EARS
+            required: true
+          - name: roles
+            label: Rôles concernés
+            type: multi_enum
+            values:
+              - controller
+              - device
+          - name: version_protocole
+            label: Version protocole
+            type: text
+        statuses:
+          - name: draft
+            label: Brouillon
+            color: '#475569'
+          - name: review
+            label: En review
+            color: '#b45309'
+          - name: approved
+            label: Approuvé
+            color: '#16a34a'
+            isApproval: true
+          - name: obsolete
+            label: Obsolète
+            color: '#6b7280'
+            isTerminal: true
+roles: *ref_0
+linkTypes:
+  - name: implementation
+    labelSourceToTarget: est implémentée par
+    labelTargetToSource: implémente
+    sourceRefs:
+      - requirement
+    targetRefs:
+      - requirement
+  - name: verification
+    labelSourceToTarget: vérifie
+    labelTargetToSource: est vérifiée par
+    sourceRefs:
+      - test
+    targetRefs:
+      - requirement
+  - name: implements-interface
+    labelSourceToTarget: implémente l'exigence d'interface
+    labelTargetToSource: est implémentée (interface) par
+    sourceRefs:
+      - requirement
+    targetRefs:
+      - requirement
