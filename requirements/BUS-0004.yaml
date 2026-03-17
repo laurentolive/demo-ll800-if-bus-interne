@@ -1,0 +1,12 @@
+id: BUS-0004
+projectId: ''
+branchId: ''
+objectTypeRef: root::exigence-bus
+title: Scrutation cyclique
+status: draft
+version: 1
+fields:
+  statement: THE contrôleur SHALL scruter chaque périphérique toutes les {periode_scrutation}.
+  roles: controller
+  version_protocole: '1.0'
+jiraLinks: []

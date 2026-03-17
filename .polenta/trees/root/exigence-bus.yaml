@@ -1,0 +1,36 @@
+nodeId: root
+typeId: exigence-bus
+root:
+  - id: dfabb312-9491-4d36-af78-6ce3b8ebf160
+    kind: folder
+    name: Couche physique
+    children:
+      - id: b96f34be-eb84-4b23-a923-e432e803b6a8
+        kind: item
+        name: Débit du bus
+        objectId: BUS-0001
+        children: []
+      - id: 117bca8f-1704-46a2-a886-880233c7bca8
+        kind: item
+        name: Contrôle d'intégrité CRC-16
+        objectId: BUS-0005
+        children: []
+  - id: 1385f048-ec8f-4c9f-aa53-fd9792983ece
+    kind: folder
+    name: Protocole
+    children:
+      - id: 702f51d4-a2dd-4993-a570-665c0d5deb66
+        kind: item
+        name: Délai de réponse d'un périphérique
+        objectId: BUS-0002
+        children: []
+      - id: a5ed8f32-d865-4ec3-afff-074e93afc106
+        kind: item
+        name: Signalement de défaut
+        objectId: BUS-0003
+        children: []
+      - id: c20c6bc9-055f-448f-a4f9-4ea6dd32ac3a
+        kind: item
+        name: Scrutation cyclique
+        objectId: BUS-0004
+        children: []

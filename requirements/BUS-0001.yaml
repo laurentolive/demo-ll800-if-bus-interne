@@ -1,0 +1,12 @@
+id: BUS-0001
+projectId: ''
+branchId: ''
+objectTypeRef: root::exigence-bus
+title: Débit du bus
+status: draft
+version: 1
+fields:
+  statement: THE bus interne SHALL fonctionner à {debit_bus}, format 8N1.
+  roles: controller, device
+  version_protocole: '1.0'
+jiraLinks: []

@@ -1,0 +1,14 @@
+id: BUS-0003
+projectId: ''
+branchId: ''
+objectTypeRef: root::exigence-bus
+title: Signalement de défaut
+status: draft
+version: 1
+fields:
+  statement: |-
+    WHEN un périphérique détecte un défaut interne
+    THE périphérique SHALL positionner le bit DEFAUT dans sa prochaine réponse.
+  roles: device
+  version_protocole: '1.0'
+jiraLinks: []
