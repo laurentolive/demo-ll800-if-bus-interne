@@ -3,7 +3,7 @@ projectId: ''
 branchId: ''
 objectTypeRef: root::exigence-bus
 title: Contrôle d'intégrité CRC-16
-status: draft
+status: approved
 version: 1
 fields:
   statement: THE bus interne SHALL protéger chaque trame par un CRC-16 CCITT.

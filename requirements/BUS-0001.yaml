@@ -3,7 +3,7 @@ projectId: ''
 branchId: ''
 objectTypeRef: root::exigence-bus
 title: Débit du bus
-status: draft
+status: approved
 version: 1
 fields:
   statement: THE bus interne SHALL fonctionner à {debit_bus}, format 8N1.
