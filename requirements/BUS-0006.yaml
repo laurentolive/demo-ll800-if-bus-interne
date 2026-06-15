@@ -1,0 +1,14 @@
+id: BUS-0006
+projectId: ''
+branchId: ''
+objectTypeRef: root::exigence-bus
+title: Mode veille du bus
+status: approved
+version: 1
+fields:
+  statement: |-
+    WHEN le contrôleur émet la trame VEILLE
+    THE participant du bus SHALL réduire sa consommation sous 5 mW.
+  roles: controller, device
+  version_protocole: '1.1'
+jiraLinks: []

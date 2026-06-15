@@ -4,9 +4,9 @@ parameters:
     unit: bauds
     description: Débit du bus série
   delai_reponse_device:
-    value: '20'
+    value: '10'
     unit: ms
-    description: Délai max. de réponse d'un périphérique
+    description: Délai max. de réponse d'un périphérique (v1.1)
   periode_scrutation:
     value: '100'
     unit: ms

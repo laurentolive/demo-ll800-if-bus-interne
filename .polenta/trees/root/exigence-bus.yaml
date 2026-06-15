@@ -34,3 +34,8 @@ root:
         name: Scrutation cyclique
         objectId: BUS-0004
         children: []
+      - id: 63f6d863-9d8a-469c-a1a6-f36e95516d78
+        kind: item
+        name: Mode veille du bus
+        objectId: BUS-0006
+        children: []

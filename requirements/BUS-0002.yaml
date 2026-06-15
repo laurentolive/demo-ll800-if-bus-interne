@@ -4,11 +4,11 @@ branchId: ''
 objectTypeRef: root::exigence-bus
 title: Délai de réponse d'un périphérique
 status: approved
-version: 1
+version: 2
 fields:
   statement: |-
     WHEN un périphérique reçoit une requête qui lui est adressée
     THE périphérique SHALL répondre en moins de {delai_reponse_device}.
   roles: device
-  version_protocole: '1.0'
+  version_protocole: '1.1'
 jiraLinks: []
